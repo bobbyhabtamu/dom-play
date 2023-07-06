@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>DOM-Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
@@ -12,10 +12,11 @@
     /*
     .hamlet{
         background-color: yellow;
-    }
+    } */
 
-    .skull{
-        background-color: green;
+    /*
+    #play span{
+        background-color: aqua;
     }
     */
 
@@ -32,9 +33,13 @@
      </header>
      
    <main class="wrapper">
-    <p><span onclick="this.style.backgroundColor='yellow'">Hamlet: To be or not to be?</span></p>
-    <p>Skull: Are you talking to me?</p>
-    <p>Hamlet: What did you say?</p>
+    <div id="play">
+        <p><span data-actor="hamlet">Hamlet: To be or not to be?</span></p>
+        <p><span data-actor="skull">Skull: Are you talking to me?</span></p>
+        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
+        <p><span data-actor="skull">Skull: I cant talk. Im only a skull.</span></p>
+        <p><span data-actor="hamlet">Hamlet: Good, because i thought i was going crazy.</span></p>
+    </div>
      <footer>
       <p><small>&copy; 2021 by 
           YOUR NAME HERE, All Rights Reserved ~ 
