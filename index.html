@@ -10,7 +10,7 @@
   <style>
 
     /*
-    .hamlet{
+    .carter{
         background-color: yellow;
     } */
 
@@ -24,21 +24,43 @@
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>DOM-Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank"></a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
    <main class="wrapper">
+    <i>Dom-Play: a nifty little website to organize your lines! With a single click, highlight (bold or otherwise) all lines for a specific actor in a play. Also
+        Un-highlight (normal or otherwise) all lines from all other actors in the play.
+        We can accommodate any number of actors, and any number of additional lines added to the page.
+        The page can do the work without page re-loads (i.e. it is done via JavaScript and the DOM).
+        The page does not use a third party API (jQuery, for example).
+        HTML "hooks" may be added to the page, meaning you can edit the HTML to enable your scripts to perform properly</i>
+    <h2>Rush Hour 2 by Jeff Nathanson</h2>
+    <p>The passenger window rolls down and we see Carter, styling in
+        a Chinese-cut suit.  He's holding a Chinese-English
+        dictionary, leaning out the window - giving his best "do me"
+        look to two girls in a convertible.</p>
     <div id="play">
-        <p><span data-actor="hamlet">Hamlet: To be or not to be?</span></p>
-        <p><span data-actor="skull">Skull: Are you talking to me?</span></p>
-        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
-        <p><span data-actor="skull">Skull: I cant talk. Im only a skull.</span></p>
-        <p><span data-actor="hamlet">Hamlet: Good, because i thought i was going crazy.</span></p>
+        <p><span data-actor="carter">Carter: Deng wa lu yun cai-shen wu.</span></p>
+        <p>	(The HORRIFIED GIRLS speed off, and Carter turns to Lee, who is driving and singing to his radio.)</p>
+        <p><span data-actor="lee">Lee: (singing) ...wish they all could be California... wish they all could be California girls...</span></p>
+            <p>(Carter ejects the BEACH BOYS CD from the stereo and TOSSES it out of the SUNROOF..)</p>
+        <p><span data-actor="carter">Carter: I warned you about playing that shit when I'm in the car.</span></p>
+        <p><span data-actor="lee">Lee: That was my CD.  Don't you ever touch a Chinese man's CD.</span></p>
+        <p><span data-actor="carter">Carter: Did you see the way those girls drove off? I did you a favor.</span></p>
+        <p><span data-actor="lee">Lee: Those girls drove off because of you.</span></p>
+        <p><span data-actor="carter">Carter: All I did was invite them for a drink.</span></p>
+        <p><span data-actor="lee">Lee: You invited them to get naked and sacrifice a small goat.</span></p>
+        <p>(Carter checks his Chinese-English dictionary)</p>
+        <p><span data-actor="carter">Carter: I said that?  Which word was "goat?"</span></p>
+        <p><span data-actor="lee">Lee: You owe me a copy of the Beach Boys Greatest Hits, Volume Two.</span></p>
+        <p><span data-actor="carter">Carter: Don't be giving me attitude, Lee.  I've been here three days and we haven't done shit.  We haven't been to a club, haven't even talked to a girl. I'm on vacation, and I want some mu-shu.</span></p>
+        <p><span data-actor="lee">Lee: Mu-shu?  You're hungry?</span></p>
+        <p><span data-actor="carter">Carter: Not Mu-shu.  Mu-shu.  I want to see some women.  Now stop playing dumb and show me the shu!</span></p>
     </div>
      <footer>
       <p><small>&copy; 2021 by 
